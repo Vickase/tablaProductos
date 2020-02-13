@@ -1,0 +1,123 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat&display=swap");
+
+.bg-modal {
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.7);
+  position: absolute;
+  top: 0;
+  align-content: center;
+  justify-content: center;
+  display: none;
+  &.show {
+    display: flex;
+  }
+  .modal-container {
+    width: 400px;
+    height: auto;
+    background: white;
+    border-radius: 5px;
+    box-sizing: border-box;
+    margin-top: 30px;
+    position: absolute;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+    .modal-header {
+      width: 100%;
+      height: auto;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      box-sizing: border-box;
+      padding: 15px 30px;
+      border-bottom: 1px solid #e5e5e5;
+      background-color: #43567a;
+      .modal-title {
+        font-size: 25px;
+        color: white;
+        margin-top: 0;
+      }
+      #close-btn {
+        width: 30px;
+        height: 30px;
+        border: none;
+        background: none;
+        bottom: 20px;
+        .closeicon {
+          width: 25px;
+          height: 25px;
+          fill:white;
+          cursor: pointer;
+        }
+      }
+    }
+    .modal-form {
+      width: 100%;
+      padding: 15px;
+      display: flex;
+      flex-direction: column;
+      box-sizing: border-box;
+      .modal-label {
+        margin-bottom: 5px;
+        color: blue;
+        font-size: 13px;
+      }
+      .form-input {
+        margin-bottom: 10px;
+        height: 34px;
+        padding: 6px 12px;
+        font-size: 14px;
+        color: #555;
+        background-color: #fff;
+        background-image: none;
+        border: 1px solid #ccc;
+        &.form-input:last-child {
+          margin-bottom: 0;
+        }
+      }
+    }
+    .modal-footer {
+      background-color: #ecf0f1;
+      width: 100%;
+      height: 80px;
+      padding: 15px;
+      box-sizing: border-box;
+      display: flex;
+      flex-direction: row;
+      justify-content: flex-end;
+      border-top: 1px solid #e5e5e5;
+      .boton {
+        display: flex;
+        padding: 6px 12px;
+        font-size: 13px;
+        border: 1px solid transparent;
+        border-radius: 2px;
+        color: white;
+        text-decoration: none;
+        justify-content: center;
+        font-family: "Montserrat", sans-serif;
+        width: 100px;
+        height: 34px;
+      }
+      .cancel-btn {
+        margin-right: 10px;
+        color: #333;
+        background-color: #fff;
+        border-color: #ccc;
+        cursor: pointer;
+        &.cancel-btn:hover {
+          background-color: #e6e6e6;
+          border-color: #adadad;
+          cursor: pointer;
+        }
+      }
+      .celeste {
+        border-color: #46b8da;
+        background-color: #5bc0de;
+        &.celeste:hover {
+          background-color: #31b0d5;
+          border-color: #269abc;
+        }
+      }
+    }
+  }
+}
